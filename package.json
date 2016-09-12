@@ -1,0 +1,26 @@
+{
+  "name": "web-project",
+  "version": "1.0.0",
+  "description": "Web Project Boilerplate for fast development'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmoraisa/web-project-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "web",
+    "project",
+    "fast",
+    "development"
+  ],
+  "author": "Murillo de Morais",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmoraisa/web-project-boilerplate/issues"
+  },
+  "homepage": "https://github.com/mmoraisa/web-project-boilerplate#readme"
+}
