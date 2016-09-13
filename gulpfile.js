@@ -103,7 +103,9 @@ gulp.task('serve', ['less','lint','compress-js','jade'], function() {
 	});
 });
 
-gulp.task('default', gulpsync.sync(['clean-app','install-components','serve'],'default'));
+gulp.task('prod', gulpsync.sync(['clean-app','install-components','serve'],'building production server'));
+gulp.task('dev', gulpsync.sync(['serve'],'building development server'));
+gulp.task('default',['dev']);
 
 function notify(msg){
 	console.log("\n-- " + msg + " --\n");
