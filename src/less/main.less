@@ -1,0 +1,21 @@
+@import "functions.less";
+
+@smartphones: ~"only screen and (max-width: 768px)";
+@tablets: ~"only screen and (max-width: 992px)";
+@desktops: ~"only screen and (min-width: 992px)";
+
+@color-base: rgb(120,120,255);
+
+body{
+	.m-a(50px);
+
+	background-color: @color-base;
+
+	@media @tablets{
+		background-color: darken(@color-base,20%);
+	}
+
+	@media @smartphones{
+		background-color: darken(@color-base,40%);
+	}
+}
