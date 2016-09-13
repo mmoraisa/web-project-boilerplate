@@ -1,7 +1,7 @@
 {
   "name": "web-project",
   "description": "Web Project Boilerplate for fast development'",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "authors": [
     "Murillo de Morais"
   ],
@@ -13,10 +13,9 @@
     "fast",
     "development"
   ],
-  "homepage": "https://github.com/mmoraisa/web-project-boilerplate",
+  "homepage": "https://github.com/mmoraisa/web-project-boilerplate#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.1.0",
-    "gulp": "^3.9.1"
+    "jquery": "^3.1.0"
   }
 }
