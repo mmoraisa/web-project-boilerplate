@@ -1,0 +1,22 @@
+{
+  "name": "web-project",
+  "description": "Web Project Boilerplate for fast development'",
+  "main": "index.js",
+  "authors": [
+    "Murillo de Morais"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "boilerplate",
+    "web",
+    "project",
+    "fast",
+    "development"
+  ],
+  "homepage": "https://github.com/mmoraisa/web-project-boilerplate",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "gulp": "^3.9.1"
+  }
+}
