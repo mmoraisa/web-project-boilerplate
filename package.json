@@ -11,18 +11,15 @@
     "gulp-clean-css": "^2.0.12",
     "gulp-install": "^0.6.0",
     "gulp-jade": "^1.1.0",
-    "gulp-jshint": "^2.0.1",
     "gulp-less": "^3.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sync": "^0.1.4",
     "gulp-uglify": "^2.0.0",
-    "jshint": "^2.9.3",
-    "jshint-stylish": "^2.2.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "gulp-jasmine-livereload-task": "^0.9.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp js-test"
   },
   "repository": {
     "type": "git",

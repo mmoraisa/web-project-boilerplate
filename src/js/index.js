@@ -1,3 +1,3 @@
-window.onload = function(){
-	console.log('ok');
-};
+function helloWorld() {
+  return "Hello world!";
+}

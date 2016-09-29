@@ -1,15 +1,16 @@
-var gulp = require('gulp');
-var del = require('del');
-var install = require('gulp-install');
-var jade = require('gulp-jade');
-var browserSync = require('browser-sync').create();
-var gulpsync = require('gulp-sync')(gulp);
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
-var less = require('gulp-less');
-var path = require('path');
-var cleanCSS = require('gulp-clean-css');
-var clear = require('clear');
+var gulp = require('gulp'),
+	del = require('del'),
+	install = require('gulp-install'),
+	jade = require('gulp-jade'),
+	browserSync = require('browser-sync').create(),
+	gulpsync = require('gulp-sync')(gulp),
+	uglify = require('gulp-uglify'),
+	rename = require('gulp-rename'),
+	less = require('gulp-less'),
+	path = require('path'),
+	cleanCSS = require('gulp-clean-css'),
+	clear = require('clear'),
+	jasmine = require('gulp-jasmine-livereload-task');
 	
 gulp.task('clean-app', function () {
 	clear();
@@ -38,6 +39,20 @@ gulp.task('install-components', function(){
 	return gulp.src(['./bower.json'])
   				.pipe(install());
 });
+
+gulp.task('js-test', jasmine({
+	files: ['src/js/*.js','src/js/spec/tests/*_spec.js'],
+	host: 'localhost',
+	port: 8080,
+	jshint: {
+		files: ['src/js/*.js', 'src/js/spec/tests/*.js'],
+		options: {
+			curly: true,
+			white: true,
+			indent: 2
+   		}
+	}
+}));
 
 gulp.task('compress-js', ['clean-app-folder-js'], function () {
     return gulp.src('src/js/*.js')
