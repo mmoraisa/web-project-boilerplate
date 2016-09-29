@@ -4,12 +4,12 @@
 
 This is a boilerplate for web projects that uses the most recent technologies and can help you to start some projects with secure. Be faster than you already are.
 
-  - [JADE] (a really good HTML Render Template)
-  - [LESS] (write less with this CSS Pre Processor)
-  - [Jasmine] (you write JS, and the Jasmine will show a lovely test for you)
-  - [JSHint] (no more fucking semicolons locking your mind)
-  - [BrowserSync] (did you ever saw your devices working together?)
-  - [GulpJS] (the orchestra's conductor)
+  - [JADE] a really good HTML Render Template
+  - [LESS] write less with this CSS Pre Processor
+  - [Jasmine] you write JS, and the Jasmine will show a lovely test for you
+  - [JSHint] no more fucking semicolons locking your mind
+  - [BrowserSync] did you ever saw your devices working together?
+  - [GulpJS] the orchestra's conductor
 
 You can also:
   - Use your own frameworks
